@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KETE | Mogan Unlu Mamülleri • 1989'dan Beri</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#F8F2E6',
+                            200: '#EFE3CD',
+                        },
+                        butter: {
+                            300: '#F0C775',
+                            400: '#E5A93B',
+                            500: '#D48C1C',
+                            600: '#B26F0E',
+                        },
+                        crust: {
+                            700: '#5C3A21',
+                            800: '#3E2514',
+                            900: '#26150A',
+                        },
+                        pistachio: {
+                            50: '#F4F7F0',
+                            100: '#E4ECD9',
+                            600: '#5A7A3A',
+                            700: '#46612B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream-50 text-crust-900 font-sans antialiased selection:bg-butter-400 selection:text-white">
+
+    <!-- 1. ÜST MENÜ (HEADER) -->
+    <header class="sticky top-0 z-50 bg-cream-50/95 backdrop-blur-md border-b border-cream-200/80 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3.5">
+                
+                <!-- Oval KETE • Mogan • 1989 Marka Mührü & Slogan -->
+                <a href="#anasayfa" class="flex items-center gap-3.5 group">
+                    <div class="relative px-5 py-2 rounded-full bg-crust-900 border-2 border-butter-400 shadow-md flex flex-col items-center justify-center group-hover:scale-105 transition-transform">
+                        <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-butter-400 leading-none">KETE</span>
+                        <span class="text-[9px] font-semibold tracking-widest uppercase text-cream-100 mt-0.5">Mogan • 1989</span>
+                    </div>
+                    <div class="hidden sm:flex flex-col">
+                        <span class="text-xs font-bold tracking-widest uppercase text-crust-800">Mogan Unlu Mamülleri</span>
+                        <span class="font-serif italic text-sm text-butter-600">“Usta Ellerin Armağanı”</span>
+                    </div>
+                </a>
+
+                <!-- Masaüstü Menü -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#anasayfa" class="text-sm font-semibold text-crust-700 hover:text-butter-600 transition-colors">Ana Sayfa</a>
+                    <a href="#urunlerimiz" class="text-sm font-semibold text-crust-700 hover:text-butter-600 transition-colors">Ürünlerimiz</a>
+                    <a href="#mirasimiz" class="text-sm font-semibold text-crust-700 hover:text-butter-600 transition-colors">1989 Mirasımız</a>
+                    <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-pistachio-50 border border-pistachio-600/25 text-pistachio-700 text-xs font-bold">
+                        <span class="w-1.5 h-1.5 rounded-full bg-pistachio-600"></span>
+                        Gölbaşı / Ankara
+                    </span>
+                </nav>
+
+                <!-- Mobil Menü Butonu -->
+                <button id="mobile-menu-btn" aria-label="Menüyü Aç" class="md:hidden p-3 rounded-xl text-crust-800 hover:bg-cream-200 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobil Açılır Menü -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-b border-cream-200 px-4 pt-2 pb-5 space-y-2">
+            <a href="#anasayfa" class="block px-4 py-3 rounded-xl text-base font-semibold text-crust-800 hover:bg-cream-200">Ana Sayfa</a>
+            <a href="#urunlerimiz" class="block px-4 py-3 rounded-xl text-base font-semibold text-crust-800 hover:bg-cream-200">Ürünlerimiz</a>
+            <a href="#mirasimiz" class="block px-4 py-3 rounded-xl text-base font-semibold text-crust-800 hover:bg-cream-200">1989 Mirasımız</a>
+        </div>
+    </header>
+
+    <!-- 2. KARŞILAMA ALANI (HERO) -->
+    <section id="anasayfa" class="relative overflow-hidden pt-10 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50">
+        <!-- Sıcak Dekoratif Efektler -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-butter-400/15 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-crust-700/5 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Sol Metin Alanı -->
+                <div class="lg:col-span-6 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-cream-200 shadow-sm text-crust-800 text-xs font-bold tracking-wide uppercase">
+                        <span class="text-butter-600">✦</span>
+                        1989'dan Beri Gölbaşı / Ankara
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-crust-900 leading-[1.12]">
+                        Usta Ellerin Armağanı <br>
+                        <span class="text-butter-600 italic">Taş Fırın & Pastane</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-crust-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        1989 yılından bu yana Mogan'da; doğal ekşi mayalı taş fırın ekmeklerinden susamlı çıtır simitlere, bol Antep fıstıklı el açması baklavalardan günlük taze pastalara kadar geleneksel fırın ustalığını özenle yaşatıyoruz.
+                    </p>
+                    
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#urunlerimiz" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-crust-900 hover:bg-butter-600 text-cream-50 font-semibold shadow-lg shadow-crust-900/15 transition-all transform hover:-translate-y-0.5 text-center">
+                            Ürünlerimizi İncele
+                        </a>
+                        <a href="#mirasimiz" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-cream-100 text-crust-900 font-semibold border border-cream-200 transition-colors text-center">
+                            1989 Hikayemiz
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sağ Görsel Alanı -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-cream-200 aspect-[4/3] group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85" 
+                            onerror="this.src='https://placehold.co/900x700/5C3A21/FFFFFF?text=Kete+Mogan+1989'" 
+                            alt="Taş fırından yeni çıkmış çıtır kabuklu geleneksel ekmekler" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-crust-900/75 via-crust-900/15 to-transparent"></div>
+                        
+                        <div class="absolute bottom-5 left-5 right-5 bg-cream-50/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-lg border border-cream-200 flex items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-butter-600">Kete Mogan Unlu Mamülleri</span>
+                                <h2 class="font-serif text-lg sm:text-xl font-bold text-crust-900 mt-0.5">Her Sabah Sıcak Taş Fırın Geleneği</h2>
+                            </div>
+                            <div class="hidden sm:flex px-3.5 py-2 rounded-xl bg-crust-900 text-butter-400 font-serif font-bold text-sm shrink-0">
+                                Est. 1989
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ÜRÜNLERİMİZ (2x2 SİMETRİK IZGARA & KATEGORİ FİLTRELEME) -->
+    <section id="urunlerimiz" class="py-20 bg-cream-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Bölüm Başlığı -->
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold tracking-widest uppercase text-butter-600">Tezgahımızdan Seçmeler</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-crust-900 mt-2">Özel Ürünlerimiz</h2>
+                <p class="text-crust-700 mt-3 text-sm sm:text-base">
+                    Usta ellerde şekillenen taş fırın klasiklerimizi ve günlük taze pastane lezzetlerimizi kategorilere göre keşfedin.
+                </p>
+            </div>
+
+            <!-- İnteraktif Kategori Filtreleme Sekmeleri -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12" role="tablist" aria-label="Ürün Kategorileri">
+                <button data-filter="all" class="filter-btn active px-6 py-3 rounded-full text-xs sm:text-sm font-bold transition-all bg-crust-900 text-cream-50 shadow-md">
+                    Tümü (4)
+                </button>
+                <button data-filter="firin" class="filter-btn px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-crust-800 border border-cream-200 hover:border-butter-400">
+                    Fırın & Simit
+                </button>
+                <button data-filter="tatli" class="filter-btn px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-crust-800 border border-cream-200 hover:border-butter-400">
+                    Tatlı & Pasta
+                </button>
+            </div>
+
+            <!-- 2x2 SİMETRİK ÜRÜN KARTI IZGARASI -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- 1. ÜRÜN: ANADOLU EKMEĞİ -->
+                <article data-category="firin" class="product-card group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 sm:h-72 overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/900x650/5C3A21/FFFFFF?text=Anadolu+Ekmegi'" 
+                            alt="Çörek otlu ve haşhaşlı, taş fırında pişmiş geleneksel Anadolu Ekmeği" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-crust-900/90 backdrop-blur-sm text-cream-50 text-xs font-semibold shadow-sm">
+                            Fırın & Simit
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-crust-900 group-hover:text-butter-600 transition-colors">Anadolu Ekmeği</h3>
+                            <p class="text-crust-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                                Çörek otlu ve haşhaşlı zengin dokusuyla taş fırında ağır ağır pişmiş; kalın çıtır kabuklu ve yumuşak iç dokulu geleneksel taş fırın ekmeği.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-cream-100 flex items-center justify-between text-xs font-bold text-butter-600 uppercase tracking-wider">
+                            <span>Çörek Otlu & Haşhaşlı</span>
+                            <span>Taş Fırın Ekmeği</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. ÜRÜN: FISTIKLI BAKLAVA & ŞÖBİYET -->
+                <article data-category="tatli" class="product-card group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 sm:h-72 overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1598110750624-207050c4f28c?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/900x650/5A7A3A/FFFFFF?text=Fistikli+Baklava+%26+Sobiyet'" 
+                            alt="Bol Antep fıstıklı, kat kat el açması baklava ve şöbiyet" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-pistachio-700/95 backdrop-blur-sm text-white text-xs font-semibold shadow-sm">
+                            Tatlı & Pasta
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-crust-900 group-hover:text-pistachio-700 transition-colors">Fıstıklı Baklava & Şöbiyet</h3>
+                            <p class="text-crust-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                                Birinci kalite bol Antep fıstığı, usta ellerde açılan kat kat incecik yufkası ve tam kıvamında doğal şerbetiyle çıtır geleneksel tatlılar.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-cream-100 flex items-center justify-between text-xs font-bold text-pistachio-700 uppercase tracking-wider">
+                            <span>Bol Antep Fıstıklı</span>
+                            <span>Kat Kat El Açması</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. ÜRÜN: ÇAY & ÇITIR SİMİT -->
+                <article data-category="firin" class="product-card group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 sm:h-72 overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/900x650/B26F0E/FFFFFF?text=Cay+%26+Citir+Simit'" 
+                            alt="Taze demlenmiş çay eşliğinde bol susamlı geleneksel simit" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-butter-600/95 backdrop-blur-sm text-white text-xs font-semibold shadow-sm">
+                            Fırın & Simit
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-crust-900 group-hover:text-butter-600 transition-colors">Çay & Çıtır Simit</h3>
+                            <p class="text-crust-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                                Pekmezle harmanlanıp kavrulmuş bol susamla kaplanan geleneksel çıtır Ankara simidi ve taze demlenmiş sıcacık tavşan kanı çay keyfi.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-cream-100 flex items-center justify-between text-xs font-bold text-butter-600 uppercase tracking-wider">
+                            <span>Bol Susamlı Simit</span>
+                            <span>Taze Demlenmiş Çay</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. ÜRÜN: YAŞ PASTA ÇEŞİTLERİ -->
+                <article data-category="tatli" class="product-card group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-64 sm:h-72 overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/900x650/3E2514/FFFFFF?text=Yas+Pasta+Cesitleri'" 
+                            alt="Çikolata ganajlı, taze çilekli ve fıstıklı özel yaş pasta çeşitleri" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-crust-800/95 backdrop-blur-sm text-cream-50 text-xs font-semibold shadow-sm">
+                            Tatlı & Pasta
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-crust-900 group-hover:text-butter-600 transition-colors">Yaş Pasta Çeşitleri</h3>
+                            <p class="text-crust-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                                Yoğun çikolata ganajlı, mevsimin en taze çilekleri ve Antep fıstıklı özel krema katlarıyla hazırlanan günlük taze pastane klasikleri.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-cream-100 flex items-center justify-between text-xs font-bold text-crust-700 uppercase tracking-wider">
+                            <span>Çikolata, Çilek & Fıstık</span>
+                            <span>Günlük Taze Üretim</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 1989 MİRASIMIZ -->
+    <section id="mirasimiz" class="py-20 bg-cream-100 border-t border-cream-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="inline-flex items-center justify-center px-5 py-2 rounded-full bg-crust-900 border-2 border-butter-400 shadow-md">
+                <span class="font-serif text-sm sm:text-base font-bold tracking-wider text-butter-400">1989'DAN BERİ • GÖLBAŞI / ANKARA</span>
+            </div>
+            
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-crust-900 leading-tight">
+                “Usta Ellerin Armağanı” ile Değişmeyen Lezzet Geleneği
+            </h2>
+            
+            <p class="text-crust-700 leading-relaxed text-base sm:text-lg max-w-2xl mx-auto">
+                1989 yılında Ankara Gölbaşı'nda yanan fırın ateşimizle; doğal malzemeleri, el emeğini ve samimi mahalle kültürünü aynı çatı altında buluşturuyoruz. Her sabah taze çıkan ekmeklerimizden özel günlerinize eşlik eden pastalarımıza kadar aynı özenle üretmeye devam ediyoruz.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. SADE ALT BİLGİ (FOOTER) -->
+    <footer class="bg-crust-900 text-cream-100 py-10 border-t border-crust-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row items-center gap-3.5">
+                <div class="px-4 py-1.5 rounded-full bg-crust-800 border border-butter-400 flex flex-col items-center">
+                    <span class="font-serif text-base font-bold tracking-wider text-butter-400 leading-none">KETE</span>
+                    <span class="text-[8px] tracking-widest uppercase text-cream-100 mt-0.5">Mogan • 1989</span>
+                </div>
+                <span class="text-sm sm:text-base font-semibold text-cream-100">
+                    Kete Mogan Unlu Mamülleri • 1989'dan Beri Gölbaşı / Ankara
+                </span>
+            </div>
+            <p class="font-serif italic text-sm text-butter-300">
+                “Usta Ellerin Armağanı”
+            </p>
+        </div>
+    </footer>
+
+    <!-- İnteraktif Mobil Menü & Kategori Filtreleme Scripti -->
+    <script>
+        // Mobil Menü Aç/Kapat
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Kategori Filtreleme Sistemi (Tümü (4), Fırın & Simit, Tatlı & Pasta)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-crust-900', 'text-cream-50', 'shadow-md', 'font-bold');
+                    b.classList.add('bg-white', 'text-crust-800', 'border', 'border-cream-200', 'font-semibold');
+                });
+                btn.classList.remove('bg-white', 'text-crust-800', 'border', 'border-cream-200', 'font-semibold');
+                btn.classList.add('bg-crust-900', 'text-cream-50', 'shadow-md', 'font-bold');
+
+                const selectedFilter = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (selectedFilter === 'all' || cardCategory === selectedFilter) {
+                        card.classList.remove('hidden');
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(8px)';
+                        requestAnimationFrame(() => {
+                            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
